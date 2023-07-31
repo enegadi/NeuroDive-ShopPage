@@ -1,4 +1,4 @@
-import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import { HStack, Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 import { useRef } from "react";
 import { BsSearch } from "react-icons/bs";
 
@@ -14,15 +14,17 @@ const SearchInput = () => {
         }
       }}
     >
-      <InputGroup>
-        <InputLeftElement children={<BsSearch />} />
-        <Input
-          ref={ref}
-          borderRadius={20}
-          placeholder="Book or Author"
-          variant="filled"
-        />
-      </InputGroup>
+      <HStack justifyContent={"Center"}>
+        <InputGroup maxW={800}>
+          <InputLeftElement children={<BsSearch />} />
+          <Input
+            ref={ref}
+            borderRadius={20}
+            placeholder="Book or Author"
+            variant="filled"
+          />
+        </InputGroup>
+      </HStack>
     </form>
   );
 };

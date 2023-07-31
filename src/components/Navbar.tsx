@@ -17,8 +17,8 @@ export default function Navbar() {
     <Box
       backgroundColor={"white"}
       m={{
-        lg: 2,
-        base: 3,
+        lg: 8,
+        base: 4,
       }}
       borderRadius={25}
       p={{
@@ -47,6 +47,8 @@ export default function Navbar() {
           <Image src={Logo} />
         </GridItem>
         <GridItem
+          justifyContent={"center"}
+          alignItems={"center"}
           pl="2"
           gridArea="search-bar"
           display={{ base: "none", lg: "block" }}
