@@ -7,10 +7,10 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import Logo from "../assets/images/logo.png";
-import SearchInput from "./SearchInput";
-import Categories from "./Categories";
-import Menu from "../assets/images/menu.png";
+import Logo from "../../assets/images/logo.png";
+import SearchInput from "../SearchInput";
+import Categories from "../Categories";
+import Menu from "../../assets/images/menu.png";
 
 export default function Navbar() {
   return (
