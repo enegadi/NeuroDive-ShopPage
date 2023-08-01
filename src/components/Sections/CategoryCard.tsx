@@ -10,9 +10,10 @@ import {
 import { FaEnvelope } from "react-icons/fa";
 import BookCard from "../BookCard";
 
-export default function CategoryCard() {
+export default function CategoryCard({ id }: { id: string }) {
   return (
     <Box
+      id={id}
       backgroundColor={"white"}
       m={{
         lg: 8,
@@ -47,7 +48,7 @@ export default function CategoryCard() {
         </HStack>
       </HStack>
 
-      <SimpleGrid columns={{ sm: 2, lg: 4 }} spacing={6} padding="10px">
+      <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={6} padding="10px">
         <BookCard />
         <BookCard />
         <BookCard />
