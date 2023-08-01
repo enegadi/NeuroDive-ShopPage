@@ -23,7 +23,20 @@ export default function Categories() {
           smooth={true}
           duration={500}
         >
-          <Text cursor="pointer">{cat}</Text>
+          <Text
+            cursor="pointer"
+            color="#575757"
+            textAlign="center"
+            fontFamily="Archivo"
+            fontSize="16px"
+            fontWeight="500"
+            fontStyle="normal"
+            lineHeight="36px"
+            letterSpacing="1px"
+            textTransform="capitalize"
+          >
+            {cat}
+          </Text>
         </Link>
       ))}
     </HStack>

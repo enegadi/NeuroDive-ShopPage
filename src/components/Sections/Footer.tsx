@@ -29,11 +29,11 @@ export default function Footer() {
         }}
         borderRadius={25}
         p={{
-          lg: 10,
+          lg: 5,
           base: 6,
         }}
-        mt={{ lg: 130, base: 150 }}
-        pt={{ base: 150 }}
+        // mt={{ lg: 130, base: 150 }}
+        // pt={{ base: 150 }}
         pb={{ base: 100 }}
       >
         <Box
@@ -42,41 +42,73 @@ export default function Footer() {
           alignItems={"center"}
         >
           <Image
-            display={{ lg: "block", base: "none" }}
+            display={{ lg: "none", base: "none" }}
             src={footerPic}
             position="absolute" // Position the image absolutely within the parent Box
-            left={0} // Align the image to the left
-            bottom={0} // Align the image to the bottom
+            left={"125px"} // Align the image to the left
+            bottom={"90px"} // Align the image to the bottom
             zIndex={1}
           />
           <Image
-            display={{ lg: "none", base: "Block" }}
+            display={{ lg: "none", base: "none" }}
             src={footerPicBase}
             position="absolute" // Position the image absolutely within the parent Box
             left={25} // Align the image to the left
             bottom={400} // Align the image to the bottom
             zIndex={1}
           />
-          <Box w={"50%"} />
+          <Box
+          //  w={"50%"}
+          >
+            <Image
+              // display={{ lg: "block", base: "block" }}
+              src={footerPic}
+              zIndex={1}
+            />
+          </Box>
           <Box display={"flex"} flexDir={"column"} gap={4}>
             <FooterElement />
             <FooterElement />
             <FooterElement />
-            <Box display={"flex"} flexDir={"row"} gap={8}>
+            <Box
+              display={"flex"}
+              flexDir={{ lg: "row", base: "column" }}
+              gap={3}
+            >
               <Button
-                colorScheme="teal"
-                borderRadius={"20px"}
-                maxW={"150px"}
-                w={"100%"}
+                borderRadius="50px"
+                background="#30CAC5"
+                display="flex"
+                width={{ base: "283px", lg: "220px" }}
+                padding="1.5px 0px"
+                justifyContent="center"
+                alignItems="center"
+                color="#FFF"
+                textAlign="center"
+                fontFamily="Archivo"
+                fontSize="18px"
+                fontWeight="500"
+                fontStyle="normal"
+                lineHeight="32px"
               >
                 Subscribe
               </Button>
               <Button
-                colorScheme="teal"
-                variant="outline"
-                borderRadius={"20px"}
-                maxW={"150px"}
-                w={"100%"}
+                display="flex"
+                width={{ base: "283px", lg: "220px" }}
+                padding="1.5px 95.5px"
+                justifyContent="center"
+                alignItems="center"
+                borderRadius="50px"
+                border="2px solid #30CAC5"
+                color="#30CAC5"
+                textAlign="center"
+                fontFamily="Archivo"
+                fontSize="18px"
+                fontWeight="500"
+                fontStyle="normal"
+                lineHeight="32px"
+                bg={"white"}
               >
                 Learn More
               </Button>

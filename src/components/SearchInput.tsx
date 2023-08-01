@@ -15,7 +15,7 @@ const SearchInput = () => {
       }}
     >
       <HStack justifyContent={"Center"}>
-        <InputGroup maxW={800}>
+        <InputGroup maxW={"600px"}>
           <InputLeftElement children={<BsSearch />} />
           <Input
             ref={ref}

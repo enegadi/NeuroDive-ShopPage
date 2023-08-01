@@ -64,7 +64,27 @@ export default function Navbar() {
           display={{ base: "none", lg: "inline" }}
         >
           <HStack fontFamily={"Archivo"} fontSize={"12px"}>
-            <Text>Login</Text> <Text>|</Text> <Text>Logout</Text>
+            <Text
+              color="#000"
+              fontFamily="Archivo"
+              fontSize="12px"
+              fontWeight="600"
+              fontStyle="normal"
+              lineHeight="normal"
+            >
+              Login
+            </Text>{" "}
+            <Text>|</Text>{" "}
+            <Text
+              color="#000"
+              fontFamily="Archivo"
+              fontSize="12px"
+              fontWeight="600"
+              fontStyle="normal"
+              lineHeight="normal"
+            >
+              Logout
+            </Text>
           </HStack>
         </GridItem>
 

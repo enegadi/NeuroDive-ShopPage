@@ -42,7 +42,9 @@ export default function Hero() {
         base: 8,
       }}
     >
-      <GridItem area={"heading"}>
+      <GridItem area={"heading"}
+       ps={{ base: 5 , lg: 0}}
+       >
         <Text
           color="#000"
           fontSize={{ lg: "48px", base: "31px" }}
@@ -54,7 +56,9 @@ export default function Hero() {
           Get Our Latest Products
         </Text>
       </GridItem>
-      <GridItem area={"paragraph"}>
+      <GridItem area={"paragraph"}
+       ps={{ base: 5 , lg: 0}}
+       >
         <Text
           fontSize="16px"
           fontWeight="400"
@@ -66,7 +70,7 @@ export default function Hero() {
         </Text>
       </GridItem>
       <GridItem
-        pl={{lg :"8"}}
+        pl={{ lg: "8" }}
         justifySelf={"center"}
         alignItems={"center"}
         area={"pic"}
@@ -77,7 +81,7 @@ export default function Hero() {
       <GridItem
         // pl="2"
         area={"card"}
-        justifySelf={{base: "center"}}
+        justifySelf={{ base: "center" , lg : "normal"}}
       >
         <IconCardContainer />
       </GridItem>
