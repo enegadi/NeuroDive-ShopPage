@@ -20,6 +20,10 @@ const theme = extendTheme({
       900: "#111",
     },
   },
+  fonts: {
+    body: "Archivo, sans-serif",
+    heading: "Archivo, sans-serif",
+  },
 });
 
 export default theme;

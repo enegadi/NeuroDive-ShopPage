@@ -1,12 +1,13 @@
 import { Button, Center, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import HeroLg from "../../assets/images/Hero-lg.png";
 import HeroBase from "../../assets/images/Hero-base.png";
-import IconCard from "../IconCard";
+import IconCardContainer from "../IconCardContainer";
+import Button1 from "../Button1";
+import Button2 from "../Button2";
 
 export default function Hero() {
   return (
     <Grid
-      textColor={"gray.900"}
       gridGap={1}
       templateAreas={{
         base: `"heading heading heading heading"
@@ -21,17 +22,15 @@ export default function Hero() {
             "button-1 button-1 button-2 button-2 pic pic  "`,
       }}
       gridTemplateRows={{
-        base: "90px 100px 100px 440px 50px 60px ",
-        lg: "100px 100px 100px 60px ",
+        base: "80px 60px 100px 440px 50px 60px ",
+        lg: "105px 45px 110px 60px ",
       }}
       gridTemplateColumns={{
         base: "1fr 1fr 1fr 1fr",
-        lg: "1fr 1fr 1fr 1fr 1fr 1fr",
+        lg: "110px 110px 1fr 1fr 200px 200px",
       }}
-      //   h="200px"
       gap="1"
-      color="blackAlpha.700"
-      fontWeight="bold"
+      // fontWeight="bold"
       bg={"white"}
       m={{
         lg: 8,
@@ -39,83 +38,54 @@ export default function Hero() {
       }}
       borderRadius={25}
       p={{
-        lg: 5,
-        base: 3,
+        lg: 8,
+        base: 8,
       }}
     >
-      <GridItem
-        pl={10}
-        //   bg="orange.300"
-        area={"heading"}
-        paddingBottom={{ base: 5 }}
-      >
+      <GridItem area={"heading"}>
         <Text
-          fontSize={{
-            base: "30px",
-            lg: "48px",
-          }}
-          fontWeight={"extrabold"}
+          color="#000"
+          fontSize={{ lg: "48px", base: "31px" }}
+          fontWeight="900"
+          fontStyle="normal"
+          lineHeight="normal"
+          textTransform="uppercase"
         >
           Get Our Latest Products
         </Text>
       </GridItem>
-      <GridItem
-        pl={10}
-        justifySelf={"center"}
-        //   bg="pink.300"
-        area={"paragraph"}
-      >
-        <Text fontSize={"16px"}>
+      <GridItem area={"paragraph"}>
+        <Text
+          fontSize="16px"
+          fontWeight="400"
+          fontStyle="normal"
+          lineHeight="normal"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           venenatis sapien mauris, in aliquet risus ultricies consequat.
         </Text>
       </GridItem>
       <GridItem
-        pl="2"
+        pl={{lg :"8"}}
         justifySelf={"center"}
         alignItems={"center"}
-        //   bg="green.300"
         area={"pic"}
       >
         <Image src={HeroLg} display={{ base: "none", lg: "block" }} />
         <Image src={HeroBase} display={{ base: "block", lg: "none" }} />
       </GridItem>
       <GridItem
-        pl="2"
-        //   bg="blue.300"
+        // pl="2"
         area={"card"}
+        justifySelf={{base: "center"}}
       >
-        <IconCard />
+        <IconCardContainer />
       </GridItem>
-      <GridItem
-        mx={{ base: 3 }}
-        //   bg="blue.300"
-        area={"button-1"}
-      >
-        <Button
-          colorScheme="teal"
-          maxW={{ lg: "300px" }}
-          w={"100%"}
-          borderRadius={"25px"}
-          h={"50px"}
-        >
-          Subscribe
-        </Button>
+      <GridItem area={"button-1"}>
+        <Button1 />
       </GridItem>
-      <GridItem
-        mx={{ base: 3 }} //   bg="blue.300"
-        area={"button-2"}
-      >
-        <Button
-          colorScheme="teal"
-          maxW={{ lg: 300 }}
-          w={"100%"}
-          borderRadius={"25px"}
-          h={"50px"}
-          variant="outline"
-        >
-          Get the latest one now
-        </Button>
+      <GridItem area={"button-2"}>
+        <Button2 />
       </GridItem>
     </Grid>
   );
