@@ -6,16 +6,6 @@ interface Props {
 }
 
 export default function Rate({ rate }: Props) {
-  if (rate == 0)
-    return (
-      <HStack justifyContent={"center"}>
-        <WhiteStar />
-        <WhiteStar />
-        <WhiteStar />
-        <WhiteStar />
-        <WhiteStar />
-      </HStack>
-    );
   if (rate == 1)
     return (
       <HStack justifyContent={"center"}>
@@ -66,4 +56,14 @@ export default function Rate({ rate }: Props) {
         <BlackStar />
       </HStack>
     );
+
+  return (
+    <HStack justifyContent={"center"}>
+      <WhiteStar />
+      <WhiteStar />
+      <WhiteStar />
+      <WhiteStar />
+      <WhiteStar />
+    </HStack>
+  );
 }

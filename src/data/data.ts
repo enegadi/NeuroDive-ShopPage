@@ -1,7 +1,7 @@
 import Category from "../entities/Category";
 import bundles from "./bundles";
 import EBooks from "./E-books";
-import Guides from "./guides";
+import Guides from "./Guides";
 import PlannerTrackers from "./Planner-Trackers";
 import Workbook from "./Workbook";
 

@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       {/* Add ID to the CategoryCard component */}
-      <CategoryCard id="category-card" />
+      <CategoryCard />
       <Footer />
     </Box>
   );
