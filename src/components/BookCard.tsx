@@ -47,7 +47,7 @@ export default function BookCard({
         fontWeight="700"
         fontStyle="normal"
         lineHeight={{ lg: "32px", base: "normal" }}
-        h={"115px"}
+        h={{lg : "115px", base : "75px"}}
       >
         {name}
       </Text>
@@ -73,8 +73,8 @@ export default function BookCard({
           color="#000"
           textAlign="center"
           fontFamily="Archivo"
-          fontSize="21px"
-          fontWeight="400"
+          fontSize={{ lg: "21px", base: "16px" }}
+          fontWeight="700"
           fontStyle="normal"
           lineHeight="32px"
         >
