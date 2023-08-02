@@ -2,15 +2,15 @@ import {
   Box,
   HStack,
   Heading,
-  Icon,
   VStack,
   Text,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { FaEnvelope } from "react-icons/fa";
 import BookCard from "../BookCard";
+import bundles from "../../data/bundles";
 
 export default function CategoryCard({ id }: { id: string }) {
+  const Bundles = bundles;
   return (
     <Box
       id={id}
@@ -134,14 +134,18 @@ export default function CategoryCard({ id }: { id: string }) {
       </HStack>
 
       <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={8} padding="10px">
-        <BookCard />
-        <BookCard />
-        <BookCard />
-        <BookCard />
-        <BookCard />
-        <BookCard />
-        <BookCard />
-        <BookCard />
+        {Bundles.map((b) => (
+          <BookCard
+            key={b.id}
+            link={b.link}
+            id={b.id}
+            rate={b.rate}
+            photo_link={b.photo_link}
+            name={b.name}
+            old_price={b.old_price}
+            current_price={b.current_price}
+          />
+        ))}
       </SimpleGrid>
     </Box>
   );
