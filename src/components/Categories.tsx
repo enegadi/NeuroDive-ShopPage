@@ -1,12 +1,13 @@
 import { Box, Center, HStack, Text } from "@chakra-ui/react";
 import { Link } from "react-scroll"; // Import Link from react-scroll
 import React from "react";
+import Data from "../data/data";
 
 export default function Categories() {
   const categories = [
-    "bundles",
-    "e-books",
-    "guides",
+    "Bundles",
+    "E-books",
+    "Guides",
     "Planner-Trackers",
     "Workbook",
     "All",
@@ -15,10 +16,10 @@ export default function Categories() {
   return (
     <HStack justifyContent="center" gap={6}>
       {/* Use Link from react-scroll to scroll to the CategoryCard component */}
-      {categories.map((cat) => (
+      {Data.map((cat) => (
         <Link
-          key={cat}
-          to="category-card" // Use the ID of the target component
+          key={cat.id}
+          to={cat.divId} // Use the ID of the target component
           spy={true}
           smooth={true}
           duration={500}
@@ -35,7 +36,7 @@ export default function Categories() {
             letterSpacing="1px"
             textTransform="capitalize"
           >
-            {cat}
+            {cat.name}
           </Text>
         </Link>
       ))}

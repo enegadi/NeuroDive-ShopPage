@@ -1,4 +1,12 @@
-import { Button, HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  HStack,
+  Image,
+  Link,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import Rate from "./Rate";
 
 interface Props {
@@ -22,32 +30,45 @@ export default function BookCard({
 }: Props) {
   return (
     <VStack justifyContent={"center"}>
-      <Image src={photo_link} />
+      {/* 193.983×274.4 */}
+      <Image
+        w={{ lg: "194px", base: "100%" }}
+        h={{ lg: "274.4px", base: "200px" }}
+        src={photo_link}
+        objectFit={"cover"}
+        borderRadius={10}
+      />
       <Rate rate={rate} />
       <Text
         color="#000"
         textAlign="center"
         fontFamily="Archivo Narrow"
-        fontSize="21px"
+        fontSize={{ lg: "21px", base: "16px" }}
         fontWeight="700"
         fontStyle="normal"
-        lineHeight="32px"
+        lineHeight={{ lg: "32px", base: "normal" }}
+        h={"115px"}
       >
         {name}
       </Text>
       <HStack>
-        <Text
-          color="#F48475"
-          textAlign="center"
-          fontFamily="Archivo Black"
-          fontSize="21px"
-          fontWeight="400"
-          fontStyle="normal"
-          lineHeight="32px"
-          textDecoration="line-through"
-        >
-          ${old_price}
-        </Text>
+        
+        {old_price ? (
+          <Text
+            color="#F48475"
+            textAlign="center"
+            fontFamily="Archivo Narrow"
+            fontSize={{ lg: "21px", base: "16px" }}
+            fontWeight="700"
+            fontStyle="normal"
+            lineHeight={{ lg: "32px", base: "normal" }}
+            textDecoration="line-through"
+          >
+            ${old_price}
+          </Text>
+        ) : (
+          <Box />
+        )}
         <Text
           color="#000"
           textAlign="center"
