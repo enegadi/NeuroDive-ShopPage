@@ -76,6 +76,7 @@ export default function Footer() {
               gap={3}
             >
               <Button
+                _hover={{ bg: "#30CAC5" }}
                 borderRadius="50px"
                 background="#30CAC5"
                 display="flex"
@@ -94,6 +95,7 @@ export default function Footer() {
                 Subscribe
               </Button>
               <Button
+                _hover={{ bg: "white" }}
                 display="flex"
                 width={{ base: "283px", lg: "220px" }}
                 padding="1.5px 95.5px"

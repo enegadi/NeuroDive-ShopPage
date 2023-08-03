@@ -11,7 +11,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 265.53,
     current_price: 249.97,
-    link: "https://adhdoers.com/pages/resource-library",
+    link: "https://neurodive.samcart.com/products/the-everything-adhd-bundle---digital-printable-ebook-bundleke6kz",
   },
   //Book 2
   {
@@ -22,7 +22,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 110.92,
     current_price: 110.92,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-art-of-living-bundle",
   },
   //Book 3
   {
@@ -33,7 +33,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 59.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/adhd-essentials--notion-template-bundle",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const books: Book[] = [
     rate: 4,
     old_price: 68.88,
     current_price: 49.98,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-adhd-starter-pack",
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 56.97,
     current_price: 49.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-adhd-cooking-and-nutrition",
   },
   {
     id: 6,
@@ -63,18 +63,8 @@ const books: Book[] = [
     rate: 5,
     old_price: 70.94,
     current_price: 49.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/new-chapter",
   },
-  // {
-  //   id: 0,
-  //   name: "",
-  //   photo_link: "",
-  //   rate: 0,
-  //   old_price: 0,
-  //   current_price: 0,
-  //   link: "",
-  // },
-  //Other Books
 ];
 
 const bundles: Category = {

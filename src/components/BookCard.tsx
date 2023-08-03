@@ -47,12 +47,11 @@ export default function BookCard({
         fontWeight="700"
         fontStyle="normal"
         lineHeight={{ lg: "32px", base: "normal" }}
-        h={{lg : "115px", base : "75px"}}
+        h={{ lg: "115px", base: "75px" }}
       >
         {name}
       </Text>
       <HStack>
-        
         {old_price ? (
           <Text
             color="#F48475"
@@ -82,6 +81,7 @@ export default function BookCard({
         </Text>
       </HStack>
       <Button
+        _hover={{ bg: "#30CAC5" }}
         display="inline-flex"
         padding={{
           lg: "1.5px 64.5px 1.5px 63.5px",

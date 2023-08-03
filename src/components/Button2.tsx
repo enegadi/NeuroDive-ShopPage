@@ -3,6 +3,7 @@ import { Button } from "@chakra-ui/react";
 export default function Button2() {
   return (
     <Button
+      _hover={{ bg: "white" }}
       display="flex"
       width={{ lg: "220px", base: "100%" }}
       height="47px"

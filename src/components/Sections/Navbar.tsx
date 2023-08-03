@@ -5,6 +5,7 @@ import {
   GridItem,
   HStack,
   Image,
+  Link,
   Text,
 } from "@chakra-ui/react";
 import Logo from "../../assets/images/logo.png";
@@ -64,16 +65,18 @@ export default function Navbar() {
           display={{ base: "none", lg: "inline" }}
         >
           <HStack fontFamily={"Archivo"} fontSize={"12px"}>
-            <Text
-              color="#000"
-              fontFamily="Archivo"
-              fontSize="12px"
-              fontWeight="600"
-              fontStyle="normal"
-              lineHeight="normal"
-            >
-              Login
-            </Text>{" "}
+            <Link href="https://neurodive.co/login/">
+              <Text
+                color="#000"
+                fontFamily="Archivo"
+                fontSize="12px"
+                fontWeight="600"
+                fontStyle="normal"
+                lineHeight="normal"
+              >
+                Login
+              </Text>
+            </Link>
             <Text>|</Text>{" "}
             <Text
               color="#000"

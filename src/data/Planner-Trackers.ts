@@ -10,7 +10,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 14.99,
-    link: "",
+    link: "https://neurodive.samcart.com/products/adhd-habit-tracker",
   },
   {
     id: 1,
@@ -20,7 +20,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 14.99,
-    link: "",
+    link: "https://neurodive.samcart.com/products/adhd-habit-tracker-light-mode",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 0,
     current_price: 6.95,
-    link: "",
+    link: "https://neurodive.samcart.com/products/keep-track-mini-pack ",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 29.99,
     current_price: 19.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-done-list-a-weekly-accomplishment-journal-for-adhders ",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 0,
     current_price: 9.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/new-week-new-me-for-adhders ",
   },
 ];
 

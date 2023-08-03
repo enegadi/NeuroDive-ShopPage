@@ -10,7 +10,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 5.99,
     current_price: 2.99 ,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-adhd-brain-kryptonites",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 5.99,
     current_price: 2.99,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-adhd-symptom-visualizer",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 2.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/48-positive-affirmations-for-adhders",
   },
 ];
 

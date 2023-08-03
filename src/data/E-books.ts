@@ -9,7 +9,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 0,
     current_price: 27.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/101-tips-for-adulting-with-adhd",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 34.98,
     current_price: 24.98,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-adhd-brain-explained",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 0,
     current_price: 27.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-ultimate-adhd-career-guide",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 9.97,
-    link: "",
+    link: "", //Link not found
   },
 ];
 

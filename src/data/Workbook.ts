@@ -10,7 +10,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 9.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-adhders-guide-to-managing-anger",
   },
   {
     id: 1,
@@ -19,7 +19,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 0,
     current_price: 27.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-unofficial-adhd-test-booklet ",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 0,
     current_price: 16.99,
-    link: "",
+    link: "https://neurodive.samcart.com/products/brain-food-the-ultimate-guide-to-nutrition--adhd",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 16.99,
     current_price: 14.99,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-tidy-house-tidy-mind-workbook",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 23.99 ,
     current_price: 0,
-    link: "",
+    link: "https://neurodive.samcart.com/products/goal-getters-manual",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 0,
     current_price: 19.99,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-adhd-finance-bro-workbook",
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const books: Book[] = [
     rate: 4,
     old_price: 0,
     current_price: 19.99,
-    link: "",
+    link: "https://neurodive.samcart.com/products/the-colojournal-workbook",
   },
   {
     id: 7,
@@ -73,7 +73,7 @@ const books: Book[] = [
     rate: 5,
     old_price: 0,
     current_price: 19.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/digital-decluttering-for-adhders",
   },
   {
     id: 8,
@@ -82,7 +82,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 11.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/common-questions-about-love",
   },
   {
     id: 9,
@@ -91,7 +91,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 19.97,
-    link: "",
+    link: "https://neurodive.samcart.com/products/hey-that-was-adhd-late-diagnosis-journal",
   },
   {
     id: 10,
@@ -100,7 +100,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 20.00,
     current_price: 9.97,
-    link: "",
+    link: "", //link not found
   },
 ];
 
