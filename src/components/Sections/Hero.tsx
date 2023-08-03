@@ -22,7 +22,7 @@ export default function Hero() {
             "button-1 button-1 button-2 button-2 pic pic  "`,
       }}
       gridTemplateRows={{
-        base: "80px 60px 100px 440px 50px 60px ",
+        base: "100px 60px 100px 440px 50px 60px ",
         lg: "105px 45px 110px 60px ",
       }}
       gridTemplateColumns={{

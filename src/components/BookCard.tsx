@@ -80,27 +80,29 @@ export default function BookCard({
           ${current_price}
         </Text>
       </HStack>
-      <Button
-        _hover={{ bg: "#30CAC5" }}
-        display="inline-flex"
-        padding={{
-          lg: "1.5px 64.5px 1.5px 63.5px",
-          base: "1.5px 23.5px 1.5px 23.5px",
-        }}
-        justifyContent="center"
-        alignItems="center"
-        borderRadius="50px"
-        background="#30CAC5"
-        color="#FFF"
-        textAlign="center"
-        fontFamily="Archivo"
-        fontSize="18px"
-        fontWeight="500"
-        fontStyle="normal"
-        lineHeight="32px"
-      >
-        <Link href={link}>Learn More</Link>
-      </Button>
+      <Link href={link}>
+        <Button
+          _hover={{ bg: "#30CAC5" }}
+          display="inline-flex"
+          padding={{
+            lg: "1.5px 64.5px 1.5px 63.5px",
+            base: "1.5px 23.5px 1.5px 23.5px",
+          }}
+          justifyContent="center"
+          alignItems="center"
+          borderRadius="50px"
+          background="#30CAC5"
+          color="#FFF"
+          textAlign="center"
+          fontFamily="Archivo"
+          fontSize="18px"
+          fontWeight="500"
+          fontStyle="normal"
+          lineHeight="32px"
+        >
+          Learn More
+        </Button>
+      </Link>
     </VStack>
   );
 }

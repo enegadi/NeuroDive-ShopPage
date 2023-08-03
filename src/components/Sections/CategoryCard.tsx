@@ -16,6 +16,7 @@ export default function CategoryCard() {
       {Data.map((cat) => (
         <Box
           id={cat.divId}
+          key={cat.id}
           backgroundColor={"white"}
           m={{
             lg: 8,
@@ -46,16 +47,16 @@ export default function CategoryCard() {
                     <path
                       d="M3.16992 7.57617L11.9999 12.6862L20.7699 7.60617M11.9999 21.7462V12.6762"
                       stroke="black"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M9.93062 2.61602L4.59063 5.57602C3.38063 6.24602 2.39062 7.92602 2.39062 9.30602V14.956C2.39062 16.336 3.38063 18.016 4.59063 18.686L9.93062 21.656C11.0706 22.286 12.9406 22.286 14.0806 21.656L19.4206 18.686C20.6306 18.016 21.6206 16.336 21.6206 14.956V9.30602C21.6206 7.92602 20.6306 6.24602 19.4206 5.57602L14.0806 2.60602C12.9306 1.97602 11.0706 1.97602 9.93062 2.61602Z"
                       stroke="black"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </Box>
@@ -70,16 +71,16 @@ export default function CategoryCard() {
                     <path
                       d="M3.16992 7.57617L11.9999 12.6862L20.7699 7.60617M11.9999 21.7462V12.6762"
                       stroke="black"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M9.93062 2.61602L4.59063 5.57602C3.38063 6.24602 2.39062 7.92602 2.39062 9.30602V14.956C2.39062 16.336 3.38063 18.016 4.59063 18.686L9.93062 21.656C11.0706 22.286 12.9406 22.286 14.0806 21.656L19.4206 18.686C20.6306 18.016 21.6206 16.336 21.6206 14.956V9.30602C21.6206 7.92602 20.6306 6.24602 19.4206 5.57602L14.0806 2.60602C12.9306 1.97602 11.0706 1.97602 9.93062 2.61602Z"
                       stroke="black"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </Box>
