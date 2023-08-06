@@ -32,8 +32,8 @@ export default function BookCard({
     <VStack justifyContent={"center"}>
       {/* 193.983×274.4 */}
       <Image
-        w={{ lg: "194px", base: "100%" }}
-        h={{ lg: "274.4px", base: "200px" }}
+        w={{ lg: "275px", base: "100%" }}
+        h={{ lg: "325.4px", base: "200px" }}
         src={photo_link}
         objectFit={"cover"}
         borderRadius={10}
@@ -47,7 +47,7 @@ export default function BookCard({
         fontWeight="700"
         fontStyle="normal"
         lineHeight={{ lg: "32px", base: "normal" }}
-        h={{ lg: "115px", base: "75px" }}
+        h={{ lg: "80px", base: "75px" }}
       >
         {name}
       </Text>
