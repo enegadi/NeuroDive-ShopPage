@@ -64,8 +64,8 @@ export default function Navbar() {
           pt={3}
           display={{ base: "none", lg: "inline" }}
         >
-          <HStack fontFamily={"Archivo"} fontSize={"12px"}>
-            <Link href="https://neurodive.co/login/">
+          <HStack fontFamily={"Archivo"} fontSize={"14px"} me={10}>
+            <Link href="https://neurodive.co/membership-account/membership-levels/">
               <Text
                 color="#000"
                 fontFamily="Archivo"
@@ -74,20 +74,9 @@ export default function Navbar() {
                 fontStyle="normal"
                 lineHeight="normal"
               >
-                Login
+                Sign Up
               </Text>
             </Link>
-            <Text>|</Text>{" "}
-            <Text
-              color="#000"
-              fontFamily="Archivo"
-              fontSize="12px"
-              fontWeight="600"
-              fontStyle="normal"
-              lineHeight="normal"
-            >
-              Logout
-            </Text>
           </HStack>
         </GridItem>
 
