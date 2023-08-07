@@ -7,7 +7,7 @@ import { Box } from "@chakra-ui/react";
 
 function App() {
   return (
-    <Box maxW={"1400px"} display={"flex"} flexDir={"column"} mx={"auto"}>
+    <Box maxW={"1036px"} display={"flex"} flexDir={"column"} mx={"auto"}>
       <Navbar />
       <Hero />
       {/* Add ID to the CategoryCard component */}

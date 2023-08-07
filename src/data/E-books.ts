@@ -39,7 +39,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 9.97,
-    link: "", //Link not found
+    link: "https://neurodive.samcart.com/products/an-adhders-guide-to-thriving-at-college/",
   },
 ];
 

@@ -107,7 +107,7 @@ export default function CategoryCard() {
               </Text>
             </VStack>
 
-            <HStack display={{ base: "none", lg: "flex" }}>
+            {/* <HStack display={{ base: "none", lg: "flex" }}>
               <Text
                 color="#30CAC5"
                 fontSize="21px"
@@ -133,10 +133,10 @@ export default function CategoryCard() {
                   stroke-linejoin="round"
                 />
               </svg>
-            </HStack>
+            </HStack> */}
           </HStack>
 
-          <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={8} padding="10px">
+          <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={30} padding="10px">
             {cat.books.map((b) => (
               <BookCard
                 key={b.id}

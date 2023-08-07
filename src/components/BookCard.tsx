@@ -29,35 +29,44 @@ export default function BookCard({
   link,
 }: Props) {
   return (
-    <VStack justifyContent={"center"}>
+    <VStack justifyContent={"center"} gap={2}>
       {/* 193.983×274.4 */}
       <Image
-        w={{ lg: "275px", base: "100%" }}
-        h={{ lg: "325.4px", base: "200px" }}
+        w={{ lg: "150px", base: "100%" }}
+        h={{ lg: "200x", base: "200px" }}
         src={photo_link}
         objectFit={"cover"}
         borderRadius={10}
       />
       <Rate rate={rate} />
-      <Text
-        color="#000"
-        textAlign="center"
-        fontFamily="Archivo Narrow"
-        fontSize={{ lg: "21px", base: "16px" }}
-        fontWeight="700"
-        fontStyle="normal"
-        lineHeight={{ lg: "32px", base: "normal" }}
-        h={{ lg: "80px", base: "75px" }}
+      <VStack
+        maxW={40}
+        justifyContent={"center"}
+        alignItems={"center"}
+        // h={{ lg: "70px", base: "75px" }}
       >
-        {name}
-      </Text>
+        <Text
+          verticalAlign={"center"}
+          color="#000"
+          textAlign="center"
+          fontFamily="Archivo Narrow"
+          fontSize={{ lg: "15px", base: "16px" }}
+          fontWeight="700"
+          fontStyle="normal"
+          lineHeight={{ lg: "28px", base: "normal" }}
+        >
+          {/* {name.slice(0, 40)}... */}
+          {/* {name} */}
+          {name.length <= 40 ? name : name.slice(0, 40) + "..."}
+        </Text>
+      </VStack>
       <HStack>
         {old_price ? (
           <Text
             color="#F48475"
             textAlign="center"
             fontFamily="Archivo Narrow"
-            fontSize={{ lg: "21px", base: "16px" }}
+            fontSize={{ lg: "16px", base: "16px" }}
             fontWeight="700"
             fontStyle="normal"
             lineHeight={{ lg: "32px", base: "normal" }}
@@ -72,7 +81,7 @@ export default function BookCard({
           color="#000"
           textAlign="center"
           fontFamily="Archivo"
-          fontSize={{ lg: "21px", base: "16px" }}
+          fontSize={{ lg: "16px", base: "16px" }}
           fontWeight="700"
           fontStyle="normal"
           lineHeight="32px"
@@ -85,7 +94,7 @@ export default function BookCard({
           _hover={{ bg: "#30CAC5" }}
           display="inline-flex"
           padding={{
-            lg: "1.5px 64.5px 1.5px 63.5px",
+            lg: "1.5px 40px 1.5px 40px",
             base: "1.5px 23.5px 1.5px 23.5px",
           }}
           justifyContent="center"
@@ -95,7 +104,7 @@ export default function BookCard({
           color="#FFF"
           textAlign="center"
           fontFamily="Archivo"
-          fontSize="18px"
+          fontSize="14px"
           fontWeight="500"
           fontStyle="normal"
           lineHeight="32px"
