@@ -1,4 +1,4 @@
-import { Button, Center, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+import { Button, Center, Grid, GridItem, Image, Text, Link } from "@chakra-ui/react";
 import HeroLg from "../../assets/images/Hero-lg.png";
 import HeroBase from "../../assets/images/Hero-base.png";
 import IconCardContainer from "../IconCardContainer";
@@ -23,7 +23,7 @@ export default function Hero() {
       }}
       gridTemplateRows={{
         base: "100px 60px 100px 440px 50px 60px ",
-        lg: "105px 45px 110px 60px ",
+        lg: "125px 55px 110px 60px ",
       }}
       gridTemplateColumns={{
         base: "1fr 1fr 1fr 1fr",
@@ -42,31 +42,28 @@ export default function Hero() {
         base: 8,
       }}
     >
-      <GridItem area={"heading"}
-       ps={{ base: 5 , lg: 0}}
-       >
+      <GridItem area={"heading"} ps={{ base: 5, lg: 0 }}>
         <Text
           color="#000"
-          fontSize={{ lg: "48px", base: "31px" }}
+          fontSize={{ lg: "36px", base: "31px" }}
           fontWeight="900"
           fontStyle="normal"
           lineHeight="normal"
           textTransform="uppercase"
         >
-          Get Our Latest Products
+          Discover More: Step into Our Membership Experience!
         </Text>
       </GridItem>
-      <GridItem area={"paragraph"}
-       ps={{ base: 5 , lg: 0}}
-       >
+      <GridItem area={"paragraph"} ps={{ base: 5, lg: 0 }}>
         <Text
           fontSize="16px"
           fontWeight="400"
           fontStyle="normal"
           lineHeight="normal"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          venenatis sapien mauris, in aliquet risus ultricies consequat.
+          Unlock a world of possibilities with our exclusive membership. get
+          access to a closed circle of motivated ADHDoers, an ever growing
+          resource library!!
         </Text>
       </GridItem>
       <GridItem
@@ -81,14 +78,16 @@ export default function Hero() {
       <GridItem
         // pl="2"
         area={"card"}
-        justifySelf={{ base: "center" , lg : "normal"}}
+        justifySelf={{ base: "center", lg: "normal" }}
       >
         <IconCardContainer />
       </GridItem>
       <GridItem area={"button-1"}>
-        <Button1 />
+        <Link href="https://neurodive.samcart.com/products/monthly-membership-full">
+          <Button1 />
+        </Link>
       </GridItem>
-      <GridItem area={"button-2"}>
+      <GridItem area={"button-2"} display={"none"}>
         <Button2 />
       </GridItem>
     </Grid>

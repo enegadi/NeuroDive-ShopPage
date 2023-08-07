@@ -5,6 +5,7 @@ import {
   Heading,
   Icon,
   Image,
+  Link,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -67,53 +68,65 @@ export default function Footer() {
             />
           </Box>
           <Box display={"flex"} flexDir={"column"} gap={4}>
-            <FooterElement />
-            <FooterElement />
-            <FooterElement />
+            <FooterElement text={"Get all you need to thrive with ADHD!"} />
+            <FooterElement
+              text={"Manage your time, energy and attention better"}
+            />
+            <FooterElement
+              text={"Improve your focus, motivation and confidence"}
+            />
             <Box
               display={"flex"}
               flexDir={{ lg: "row", base: "column" }}
               gap={3}
             >
-              <Button
-                _hover={{ bg: "#30CAC5" }}
-                borderRadius="50px"
-                background="#30CAC5"
-                display="flex"
-                width={{ base: "283px", lg: "220px" }}
-                padding="1.5px 0px"
-                justifyContent="center"
-                alignItems="center"
-                color="#FFF"
-                textAlign="center"
-                fontFamily="Archivo"
-                fontSize="18px"
-                fontWeight="500"
-                fontStyle="normal"
-                lineHeight="32px"
+              <Link
+                href={
+                  "https://neurodive.samcart.com/products/monthly-membership-full"
+                }
               >
-                Subscribe
-              </Button>
-              <Button
-                _hover={{ bg: "white" }}
-                display="flex"
-                width={{ base: "283px", lg: "220px" }}
-                padding="1.5px 95.5px"
-                justifyContent="center"
-                alignItems="center"
-                borderRadius="50px"
-                border="2px solid #30CAC5"
-                color="#30CAC5"
-                textAlign="center"
-                fontFamily="Archivo"
-                fontSize="18px"
-                fontWeight="500"
-                fontStyle="normal"
-                lineHeight="32px"
-                bg={"white"}
-              >
-                Learn More
-              </Button>
+                <Button
+                  _hover={{ bg: "#30CAC5" }}
+                  borderRadius="50px"
+                  background="#30CAC5"
+                  display="flex"
+                  width={{ base: "283px", lg: "220px" }}
+                  padding="1.5px 0px"
+                  justifyContent="center"
+                  alignItems="center"
+                  color="#FFF"
+                  textAlign="center"
+                  fontFamily="Archivo"
+                  fontSize="18px"
+                  fontWeight="500"
+                  fontStyle="normal"
+                  lineHeight="32px"
+                >
+                  Subscribe
+                </Button>
+              </Link>
+              <Link href="https://neurodive.samcart.com/products/monthly-membership-full">
+                <Button
+                  _hover={{ bg: "white" }}
+                  display="flex"
+                  width={{ base: "283px", lg: "220px" }}
+                  padding="1.5px 95.5px"
+                  justifyContent="center"
+                  alignItems="center"
+                  borderRadius="50px"
+                  border="2px solid #30CAC5"
+                  color="#30CAC5"
+                  textAlign="center"
+                  fontFamily="Archivo"
+                  fontSize="18px"
+                  fontWeight="500"
+                  fontStyle="normal"
+                  lineHeight="32px"
+                  bg={"white"}
+                >
+                  <Text>Learn More</Text>   
+                </Button>
+              </Link>
             </Box>
           </Box>
         </Box>

@@ -48,8 +48,8 @@ const books: Book[] = [
     photo_link:
       "https://adhdoers.com/cdn/shop/products/DigitalPrintableGoal-Getter_sManualforADHDers-01.png?v=1654273828",
     rate: 5,
-    old_price: 23.99,
-    current_price: 0,
+    old_price: 0,
+    current_price: 23.99,
     link: "https://neurodive.samcart.com/products/goal-getters-manual",
   },
   {

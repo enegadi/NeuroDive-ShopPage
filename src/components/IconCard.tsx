@@ -1,7 +1,13 @@
 import { Icon, Box, Text } from "@chakra-ui/react";
-import { FaEnvelope } from "react-icons/fa";
+import { IconType } from "react-icons";
 
-export default function IconCard() {
+interface Props {
+  number: string;
+  title: string;
+  icon: IconType;
+}
+
+export default function IconCard({ number, title, icon }: Props) {
   return (
     <Box
       display="inline-flex"
@@ -9,9 +15,9 @@ export default function IconCard() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      // gap="14px"
+      gap="0px"
     >
-      <Icon as={FaEnvelope} h={"30px"} w={"30px"} />
+      <Icon as={icon} h={"30px"} w={"30px"} />
       <Text
         fontSize="14px"
         fontWeight="600"
@@ -19,7 +25,7 @@ export default function IconCard() {
         lineHeight="32px"
         textTransform="uppercase"
       >
-        30 000
+        {number}+
       </Text>
       <Text
         fontSize="8px"
@@ -27,7 +33,7 @@ export default function IconCard() {
         fontStyle="normal"
         lineHeight="32px"
       >
-        Subscribers
+        {title}
       </Text>
     </Box>
   );

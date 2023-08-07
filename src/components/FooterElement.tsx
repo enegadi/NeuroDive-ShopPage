@@ -1,7 +1,12 @@
 import { HStack, Icon, VStack, Heading, Box, Text } from "@chakra-ui/react";
-export default function FooterElement() {
+
+interface Props {
+  text: string;
+}
+
+export default function FooterElement({ text }: Props) {
   return (
-    <Box>
+    <Box maxW={400}>
       <HStack>
         <svg
           width="24"
@@ -19,37 +24,39 @@ export default function FooterElement() {
             stroke-linejoin="round"
           />
         </svg>
-        <Box
+        <Heading
+          pt={6}
+          color="#000"
+          fontFamily="Archivo"
+          fontSize={{ lg: "22px", base: "16px" }}
+          fontWeight="700"
+          fontStyle="normal"
+          lineHeight="36px"
+          letterSpacing="1px"
+          textTransform="capitalize"
+        >
+          {text}
+        </Heading>
+        {/* <Box
           display="inline-flex"
           flexDirection="column"
           alignItems="flex-start"
           gap="-4px"
         >
-          <Heading
-            color="#000"
-            fontFamily="Archivo"
-            fontSize={{lg: "22px", base: "16px"}}
-            fontWeight="700"
-            fontStyle="normal"
-            lineHeight="36px"
-            letterSpacing="1px"
-            textTransform="capitalize"
-          >
-            Lorem ipsum dolor sit amet
-          </Heading>
           <Text
+            display={"none"}
             color="#575757"
             fontFamily="Archivo"
-            fontSize={{lg : "16px", base: "10px"}}
+            fontSize={{ lg: "16px", base: "10px" }}
             fontWeight="400"
             fontStyle="normal"
             lineHeight="36px"
             letterSpacing="1px"
             textTransform="capitalize"
           >
-            Lorem ipsum dolor sit amet, consectetur
+            Get all you need to thrive with ADHD!
           </Text>
-        </Box>
+        </Box> */}
       </HStack>
     </Box>
   );

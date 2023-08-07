@@ -65,7 +65,7 @@ export default function Navbar() {
           display={{ base: "none", lg: "inline" }}
         >
           <HStack fontFamily={"Archivo"} fontSize={"14px"} me={10}>
-            <Link href="https://neurodive.co/membership-account/membership-levels/">
+            <Link href="https://neurodive.samcart.com/products/monthly-membership-full">
               <Text
                 color="#000"
                 fontFamily="Archivo"
