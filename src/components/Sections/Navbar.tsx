@@ -12,8 +12,12 @@ import Logo from "../../assets/images/logo.png";
 import SearchInput from "../SearchInput";
 import Categories from "../Categories";
 import Menu from "../../assets/images/menu.png";
+import Close from "../../assets/images/close.png";
+import { useState } from "react";
+import CategoriesMobile from "../CategoriesMobile";
 
 export default function Navbar() {
+  const [isopen, setIsopen] = useState(false);
   return (
     <Box
       backgroundColor={"white"}
@@ -89,7 +93,10 @@ export default function Navbar() {
           pt={3}
           display={{ base: "block", lg: "none" }}
         >
-          <Image src={Menu}></Image>
+          <Image
+            src={isopen ? Close : Menu}
+            onClick={() => setIsopen(!isopen)}
+          ></Image>
         </GridItem>
 
         <GridItem
@@ -101,6 +108,7 @@ export default function Navbar() {
           <Categories />
         </GridItem>
       </Grid>
+      {isopen && <CategoriesMobile />}
     </Box>
   );
 }

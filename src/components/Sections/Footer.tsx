@@ -90,7 +90,7 @@ export default function Footer() {
                   borderRadius="50px"
                   background="#30CAC5"
                   display="flex"
-                  width={{ base: "283px", lg: "220px" }}
+                  width={{ base: "100%", lg: "220px" }}
                   padding="1.5px 0px"
                   justifyContent="center"
                   alignItems="center"
@@ -109,7 +109,7 @@ export default function Footer() {
                 <Button
                   _hover={{ bg: "white" }}
                   display="flex"
-                  width={{ base: "283px", lg: "220px" }}
+                  width={{ base: "100%", lg: "220px" }}
                   padding="1.5px 95.5px"
                   justifyContent="center"
                   alignItems="center"

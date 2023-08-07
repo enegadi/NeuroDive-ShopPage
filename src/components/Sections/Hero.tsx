@@ -22,7 +22,7 @@ export default function Hero() {
             "button-1 button-1 button-2 button-2 pic pic  "`,
       }}
       gridTemplateRows={{
-        base: "100px 60px 100px 440px 50px 60px ",
+        base: "120px 70px 100px 440px 50px 60px ",
         lg: "125px 55px 110px 60px ",
       }}
       gridTemplateColumns={{
@@ -45,7 +45,7 @@ export default function Hero() {
       <GridItem area={"heading"} ps={{ base: 5, lg: 0 }}>
         <Text
           color="#000"
-          fontSize={{ lg: "36px", base: "31px" }}
+          fontSize={{ lg: "36px", base: "26px" }}
           fontWeight="900"
           fontStyle="normal"
           lineHeight="normal"
