@@ -49,7 +49,9 @@ export default function Navbar() {
           // bg="orange.300"
           gridArea="logo"
         >
-          <Image src={Logo} />
+          <Link href="https://neurodive.co/">
+            <Image src={Logo} />
+          </Link>
         </GridItem>
         <GridItem
           justifyContent={"center"}
@@ -69,7 +71,10 @@ export default function Navbar() {
           display={{ base: "none", lg: "inline" }}
         >
           <HStack fontFamily={"Archivo"} fontSize={"14px"} me={10}>
-            <Link href="https://neurodive.samcart.com/products/monthly-membership-full">
+            <Link
+              href="https://neurodive.samcart.com/products/monthly-membership-full"
+              style={{ textDecoration: "none" }}
+            >
               <Text
                 color="#000"
                 fontFamily="Archivo"

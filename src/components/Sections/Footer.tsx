@@ -84,7 +84,7 @@ export default function Footer() {
                 href={
                   "https://neurodive.samcart.com/products/monthly-membership-full"
                 }
-              >
+                style={{ textDecoration: 'none' }}              >
                 <Button
                   _hover={{ bg: "#30CAC5" }}
                   borderRadius="50px"
