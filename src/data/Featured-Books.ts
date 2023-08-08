@@ -9,7 +9,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 19.99,
     current_price: 9.97,
-    link: "", //link not found
+    link: "https://neurodive.samcart.com/products/the-13-natural-adhd-remedies-toolkitjy6at", //link not found
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const books: Book[] = [
     rate: 0,
     old_price: 0,
     current_price: 9.97,
-    link: "", //link not found
+    link: "https://neurodive.samcart.com/products/the-secret-diary-of-an-adhd-martyr-a-girl-gone-wildnpuig", //link not found
   },
 ];
 
