@@ -1,5 +1,5 @@
 import { Button, Center, Grid, GridItem, Image, Text, Link } from "@chakra-ui/react";
-import HeroLg from "../../assets/images/Hero-lg.png";
+import HeroImage from "../../assets/images/HeroImage.png";
 import HeroBase from "../../assets/images/Hero-base.png";
 import IconCardContainer from "../IconCardContainer";
 import Button1 from "../Button1";
@@ -22,7 +22,7 @@ export default function Hero() {
             "button-1 button-1 button-2 button-2 pic pic  "`,
       }}
       gridTemplateRows={{
-        base: "120px 70px 100px 440px 50px 60px ",
+        base: "120px 70px 100px 340px 50px 0px ",
         lg: "125px 55px 110px 60px ",
       }}
       gridTemplateColumns={{
@@ -72,8 +72,8 @@ export default function Hero() {
         alignItems={"center"}
         area={"pic"}
       >
-        <Image src={HeroLg} display={{ base: "none", lg: "block" }} />
-        <Image src={HeroBase} display={{ base: "block", lg: "none" }} />
+        <Image src={HeroImage} borderRadius={25} display={{ base: "none", lg: "block" }} />
+        <Image src={HeroImage} borderRadius={25} display={{ base: "block", lg: "none" }} />
       </GridItem>
       <GridItem
         // pl="2"
