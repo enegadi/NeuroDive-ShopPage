@@ -11,8 +11,8 @@ export default function IconCardContainer() {
       alignItems="center"
       gap="33px"
     >
-      <IconCard number={"7000"} title="Members" icon={HiUserGroup} />
-      <IconCard number="5000" title="Value" icon={FaMoneyBillWave} />
+      <IconCard number={"700"} title="Members" icon={HiUserGroup} />
+      <IconCard number="500" title="Value" icon={FaMoneyBillWave} />
     </HStack>
   );
 }

@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Center,
   HStack,
   Heading,
   Icon,
@@ -37,6 +38,10 @@ export default function Footer() {
         // pt={{ base: 150 }}
         pb={{ base: 100 }}
       >
+        <Heading mx={{ lg: 10, base: 0 }} textAlign={"center"} mb={8}>
+          Get access to all the ebooks all at once through our exclusive
+          membership
+        </Heading>
         <Box
           display={"flex"}
           flexDir={{ lg: "row", base: "column" }}
@@ -67,15 +72,19 @@ export default function Footer() {
               zIndex={1}
             />
           </Box>
-          <Box display={"flex"} flexDir={"column"} gap={4}>
-            <FooterElement text={"Get all you need to thrive with ADHD!"} />
+          <Box display={"flex"} flexDir={"column"} gap={0}>
+            <FooterElement text={"Pay what you want. "} />
             <FooterElement
-              text={"Manage your time, energy and attention better"}
+              text={
+                "Help us build the largest affordable ND resource library in the world  "
+              }
             />
-            <FooterElement
-              text={"Improve your focus, motivation and confidence"}
-            />
+
+            <FooterElement text={"Get more for less"} />
+            <FooterElement text={"Get new resources every month "} />
+            <FooterElement text={"Get access to our private community"} />
             <Box
+              mt={5}
               display={"flex"}
               flexDir={{ lg: "row", base: "column" }}
               gap={3}
@@ -84,7 +93,8 @@ export default function Footer() {
                 href={
                   "https://neurodive.samcart.com/products/monthly-membership-full"
                 }
-                style={{ textDecoration: 'none' }}              >
+                style={{ textDecoration: "none" }}
+              >
                 <Button
                   _hover={{ bg: "#30CAC5" }}
                   borderRadius="50px"
@@ -124,7 +134,7 @@ export default function Footer() {
                   lineHeight="32px"
                   bg={"white"}
                 >
-                  <Text>Learn More</Text>   
+                  <Text>Learn More</Text>
                 </Button>
               </Link>
             </Box>

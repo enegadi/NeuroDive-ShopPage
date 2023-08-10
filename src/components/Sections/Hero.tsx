@@ -1,4 +1,12 @@
-import { Button, Center, Grid, GridItem, Image, Text, Link } from "@chakra-ui/react";
+import {
+  Button,
+  Center,
+  Grid,
+  GridItem,
+  Image,
+  Text,
+  Link,
+} from "@chakra-ui/react";
 import HeroImage from "../../assets/images/HeroImage.png";
 import HeroBase from "../../assets/images/Hero-base.png";
 import IconCardContainer from "../IconCardContainer";
@@ -22,8 +30,8 @@ export default function Hero() {
             "button-1 button-1 button-2 button-2 pic pic  "`,
       }}
       gridTemplateRows={{
-        base: "120px 70px 100px 340px 50px 0px ",
-        lg: "125px 55px 110px 60px ",
+        base: "160px 110px 100px 340px 50px 0px ",
+        lg: "145px 95px 110px 60px ",
       }}
       gridTemplateColumns={{
         base: "1fr 1fr 1fr 1fr",
@@ -45,26 +53,69 @@ export default function Hero() {
       <GridItem area={"heading"} ps={{ base: 5, lg: 0 }}>
         <Text
           color="#000"
-          fontSize={{ lg: "36px", base: "26px" }}
+          fontSize={{ lg: "32px", base: "26px" }}
           fontWeight="900"
           fontStyle="normal"
           lineHeight="normal"
           textTransform="uppercase"
         >
-          Discover More: Step into Our Membership Experience!
+          Get access to all the ebooks all at once through our exclusive
+          membership
         </Text>
       </GridItem>
-      <GridItem area={"paragraph"} ps={{ base: 5, lg: 0 }}>
-        <Text
-          fontSize="16px"
-          fontWeight="400"
-          fontStyle="normal"
-          lineHeight="normal"
-        >
-          Unlock a world of possibilities with our exclusive membership. get
-          access to a closed circle of motivated ADHDoers, an ever growing
-          resource library!!
-        </Text>
+      <GridItem textColor={"black"} area={"paragraph"} ps={{ base: 5, lg: 5 }}>
+        <ul>
+          <li>
+            <Text
+              fontSize="16px"
+              fontWeight="400"
+              fontStyle="normal"
+              lineHeight="normal"
+            >
+              Pay what you want.
+            </Text>
+          </li>
+          <li>
+            <Text
+              fontSize="16px"
+              fontWeight="400"
+              fontStyle="normal"
+              lineHeight="normal"
+            >
+              Help us build the largest affordable ND resource library in the world 
+            </Text>
+          </li>
+          <li>
+            <Text
+              fontSize="16px"
+              fontWeight="400"
+              fontStyle="normal"
+              lineHeight="normal"
+            >
+              Get more for less
+            </Text>
+          </li>
+          <li>
+            <Text
+              fontSize="16px"
+              fontWeight="400"
+              fontStyle="normal"
+              lineHeight="normal"
+            >
+              Get new resources every month  
+            </Text>
+          </li>
+          <li>
+            <Text
+              fontSize="16px"
+              fontWeight="400"
+              fontStyle="normal"
+              lineHeight="normal"
+            >
+              Get access to our private community 
+            </Text>
+          </li>
+        </ul>
       </GridItem>
       <GridItem
         pl={{ lg: "8" }}
@@ -72,8 +123,16 @@ export default function Hero() {
         alignItems={"center"}
         area={"pic"}
       >
-        <Image src={HeroImage} borderRadius={25} display={{ base: "none", lg: "block" }} />
-        <Image src={HeroImage} borderRadius={25} display={{ base: "block", lg: "none" }} />
+        <Image
+          src={HeroImage}
+          borderRadius={25}
+          display={{ base: "none", lg: "block" }}
+        />
+        <Image
+          src={HeroImage}
+          borderRadius={25}
+          display={{ base: "block", lg: "none" }}
+        />
       </GridItem>
       <GridItem
         // pl="2"
