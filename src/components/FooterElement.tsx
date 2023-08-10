@@ -6,9 +6,10 @@ interface Props {
 
 export default function FooterElement({ text }: Props) {
   return (
-    <Box maxW={500}>
-      <HStack>
+    <Box maxW={500} pt={4}>
+      <HStack alignItems={"start"}>
         <Box
+        pt={1}
         w={"25px"}
         h={"25pw"}>
           <svg
@@ -29,10 +30,9 @@ export default function FooterElement({ text }: Props) {
           </svg>
         </Box>
         <Text
-          pt={2}
           color="#000"
           fontFamily="Archivo"
-          fontSize={{ lg: "22px", base: "16px" }}
+          fontSize={{ lg: "18px", base: "16px" }}
           fontWeight="700"
           fontStyle="normal"
           lineHeight="36px"
@@ -41,26 +41,6 @@ export default function FooterElement({ text }: Props) {
         >
           {text}
         </Text>
-        {/* <Box
-          display="inline-flex"
-          flexDirection="column"
-          alignItems="flex-start"
-          gap="-4px"
-        >
-          <Text
-            display={"none"}
-            color="#575757"
-            fontFamily="Archivo"
-            fontSize={{ lg: "16px", base: "10px" }}
-            fontWeight="400"
-            fontStyle="normal"
-            lineHeight="36px"
-            letterSpacing="1px"
-            textTransform="capitalize"
-          >
-            Get all you need to thrive with ADHD!
-          </Text>
-        </Box> */}
       </HStack>
     </Box>
   );
